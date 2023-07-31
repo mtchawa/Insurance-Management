@@ -5,10 +5,10 @@ node{
     stage('Prepare Environment'){
         echo 'Initialize Environment'
         mavenHome = tool name: 'maven' , type: 'maven'
-        mavenCMD = "${mavenHome}/bin/mvn"
+        mavenCMD = "${mavenHome}/usr/share/maven"
         tag="3.0"
-	dockerHubUser="anujsharma1990"
-	containerName="insure-me"
+	dockerHubUser="mtchawa"
+	containerName="insurie-me"
 	httpPort="8081"
     }
     
